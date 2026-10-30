@@ -2,21 +2,23 @@
 
 Site vitrine de l'association « Le Jardin partagé des Tilleuls » : présenter le jardin, ses parcelles et ses règles, l'agenda des ateliers du samedi, l'adhésion, le contact et les mentions légales.
 
-Projet de formation réalisé en équipe avec Scrum, en HTML et Tailwind CSS avec Vite, sans JavaScript.
+Projet de formation réalisé en solo avec Scrum, en HTML et Tailwind CSS avec Vite, sans JavaScript.
 
 ## Liens
 
-- Site en ligne : https://PSEUDO.github.io/jardin-partage/ (à compléter après la première publication)
-- Tableau GitHub Projects : (à compléter)
-- Version livrée : `v0.1.0` (à compléter à la livraison)
+- Site en ligne : https://MeherziHOS.github.io/jardin-partage/ (publication à vérifier)
+- Tableau GitHub Projects : https://github.com/users/MeherziHOS/projects/2
+- Version livrée : `v0.1.0` (à confirmer à la livraison)
 
 ## L'équipe
 
-| Membre | Compte GitHub | Responsabilités                     |
-| ------ | ------------- | ----------------------------------- |
-| Prénom | @pseudo       | Developer, Scrum Master du sprint 1 |
-| Prénom | @pseudo       | Developer, Scrum Master du sprint 2 |
-| Prénom | @pseudo       | Product Owner                       |
+## L'équipe
+
+| Membre          | Compte GitHub | Responsabilités                         |
+| --------------- | ------------- | --------------------------------------- |
+| Khaoula Meherzi | @MeherziHOS   | Developer, Scrum Master (variante solo) |
+
+Le projet est réalisé individuellement pour le moment, conformément aux consignes du formateur. Le rôle de Product Owner est assuré par le formateur.
 
 ## Installation
 
@@ -24,7 +26,7 @@ Prérequis : Node.js 24 (version LTS), Git, VS Code (extensions recommandées pr
 
 ```powershell
 cd C:\dev
-git clone https://github.com/PSEUDO/jardin-partage.git
+git clone https://github.com/MeherziHOS/jardin-partage.git
 cd jardin-partage
 npm install
 ```
@@ -64,15 +66,15 @@ Une nouvelle page (par exemple `compost.html`) s'ajoute aussi dans `vite.config.
 ## Règles de l'équipe
 
 1. Une user story = une issue = une branche = une pull request.
-2. Personne ne travaille directement sur `main` : la branche est protégée (pull request et une approbation obligatoires).
+2. Aucun développement directement sur `main` : branche protégée, pull request obligatoire et 0 approbation requise (variante solo).
 3. Avant de créer une branche : `git switch main` puis `git pull`.
 4. Branches nommées `us-NN-mot-cle` (exemple : `us-03-parcelles`).
 5. Messages de commit en français, à l'infinitif : « Ajouter le tableau des ateliers ».
-6. Chaque pull request contient `Closes #N` (N = numéro de l'issue) et est relue par un coéquipier.
-7. Le tableau GitHub Projects est tenu à jour : chacun déplace ses cartes et coche les tâches de ses issues (section « Tâches »).
-8. Daily écrit : un commentaire par personne et par sprint sur l'issue de suivi du sprint, avant l'heure limite commune (tableau des événements).
-9. Un blocage de plus de 30 minutes se signale tout de suite dans la conversation Teams de l'équipe.
-10. Les relectures sont bienveillantes et précises : on commente le code, jamais la personne.
+6. Chaque pull request contient `Closes #N` (N = numéro réel de l'issue). Une auto-vérification est effectuée avant la fusion.
+7. Le tableau GitHub Projects est tenu à jour : déplacement des cartes et suivi des tâches.
+8. Daily écrit : un commentaire sur l'issue « Sprint 1 – Suivi », selon les horaires définis.
+9. Tout blocage important est signalé au formateur.
+10. Les modifications sont vérifiées avant chaque fusion dans `main`.
 
 ## Définition de « terminé »
 
@@ -84,18 +86,18 @@ Une user story est terminée quand :
 - [ ] la page s'utilise entièrement au clavier, avec un focus visible ;
 - [ ] les contrastes sont vérifiés (4,5:1 pour le texte) et aucune information ne passe par la seule couleur ;
 - [ ] le HTML est valide (https://validator.w3.org/) ;
-- [ ] la pull request est relue, approuvée par un coéquipier et fusionnée dans `main` ;
+- [ ] la pull request est vérifiée en autonomie puis fusionnée dans `main` ;
 - [ ] le site en ligne est à jour (publication GitHub Pages réussie).
 
-Le modèle de pull request reprend les six premières lignes : le relecteur les vérifie avant d'approuver. Les deux dernières se vérifient après la fusion.
+Le modèle de pull request reprend les six premiers critères : ils sont vérifiés avant la fusion. Les deux derniers sont vérifiés après la fusion.
 
-L'équipe peut compléter cette définition : toute modification est décidée ensemble, par exemple en rétrospective, et reportée dans le modèle de pull request.
+Dans cette variante solo, la définition de « terminé » peut être améliorée à la suite des rétrospectives, avec validation du formateur si nécessaire.
 
 ## Événements des sprints
 
-| Sprint   | Planification | Daily écrit (heure limite)                | Revue avec le Product Owner | Rétrospective |
-| -------- | ------------- | ----------------------------------------- | --------------------------- | ------------- |
-| Sprint 1 | (date, heure) | avant (heure), issue « Sprint 1 – suivi » | (date, heure)               | (date, heure) |
-| Sprint 2 | (date, heure) | avant (heure), issue « Sprint 2 – suivi » | (date, heure)               | (date, heure) |
+| Sprint   | Planification | Daily écrit                  | Revue PO    | Rétrospective |
+| -------- | ------------- | ---------------------------- | ----------- | ------------- |
+| Sprint 1 | 16/11/2026    | Heure à confirmer – Issue #1 | À confirmer | À confirmer   |
+| Sprint 2 | À confirmer   | Heure à confirmer            | À confirmer | À confirmer   |
 
 Après chaque revue, le Scrum Master publie le **rapport de sprint** sur l'issue de suivi, avec le modèle `docs/rapport-de-sprint.md`.
