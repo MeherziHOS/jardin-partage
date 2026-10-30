@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/*
+ * Charte du Jardin partagé des Tilleuls.
+ * Thème NEUTRE de départ : la user story « Charte graphique » le remplace par les vraies couleurs.
+ * Gardez les noms : les pages s'en servent déjà (bg-fond, text-texte, bg-primaire…).
+ * Vérifiez chaque contraste avec https://webaim.org/resources/contrastchecker/
+ */
+@theme {
+    --color-primaire: #334155;
+    --color-primaire-fonce: #1e293b;
+    --color-secondaire: #e2e8f0;
+    --color-fond: #f8fafc;
+    --color-surface: #ffffff;
+    --color-texte: #0f172a;
+    --color-texte-secondaire: #475569;
+    --color-bordure: #64748b;
+    --color-succes: #15803d;
+    --color-erreur: #b91c1c;
+
+    --font-titre: system-ui, 'Segoe UI', Roboto, sans-serif;
+    --font-texte: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
