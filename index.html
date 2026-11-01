@@ -116,9 +116,94 @@
         </header>
 
         <main id="contenu">
-            <!-- US-02 : page d'accueil -->
-            <h1>Le Jardin partagé des Tilleuls</h1>
-            <p>Page en préparation.</p>
+            <!-- US-02 : présentation du jardin -->
+            <section aria-labelledby="titre-accueil">
+                <h1 id="titre-accueil">Le Jardin partagé des Tilleuls</h1>
+
+                <p class="text-lg font-medium text-primaire">
+                    Un jardin cultivé ensemble, au cœur du quartier des Tilleuls, ouvert à tous les
+                    habitants.
+                </p>
+
+                <p>
+                    Depuis 2019, une ancienne friche est devenue un jardin de 1 800 m² : 42
+                    parcelles, un compost collectif et des ateliers chaque samedi matin. On y vient
+                    pour cultiver, apprendre, ou simplement se rencontrer.
+                </p>
+
+                <a
+                    href="adhesion.html"
+                    class="inline-flex min-h-11 items-center rounded-lg bg-primaire px-5 py-3 font-semibold text-white! no-underline hover:bg-primaire-fonce focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaire"
+                >
+                    Adhérer à l'association
+                </a>
+            </section>
+
+            <!-- US-02 : les trois activités du jardin -->
+            <section aria-labelledby="titre-activites" class="mt-10">
+                <h2 id="titre-activites">Découvrir le jardin</h2>
+
+                <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+                    <article class="rounded-xl border border-bordure bg-surface p-6">
+                        <h3>Les parcelles</h3>
+                        <p>
+                            Découvrez les parcelles individuelles, les bacs surélevés accessibles et
+                            les espaces collectifs.
+                        </p>
+                        <a
+                            href="parcelles.html"
+                            class="font-semibold text-primaire underline underline-offset-4"
+                        >
+                            Découvrir les parcelles
+                        </a>
+                    </article>
+
+                    <article class="rounded-xl border border-bordure bg-surface p-6">
+                        <h3>Les ateliers</h3>
+                        <p>
+                            Chaque samedi matin, participez aux ateliers de jardinage ouverts aux
+                            habitants du quartier.
+                        </p>
+                        <a
+                            href="agenda.html"
+                            class="font-semibold text-primaire underline underline-offset-4"
+                        >
+                            Voir les ateliers
+                        </a>
+                    </article>
+
+                    <article class="rounded-xl border border-bordure bg-surface p-6">
+                        <h3>Le compost</h3>
+                        <p>
+                            Apportez vos épluchures et découvrez comment fonctionne notre compost
+                            collectif.
+                        </p>
+                        <span class="text-texte-secondaire italic"> Page compost à venir </span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- US-02 : horaires d'ouverture -->
+            <section aria-labelledby="titre-horaires" class="mt-10">
+                <h2 id="titre-horaires">Horaires d'ouverture</h2>
+
+                <div class="rounded-xl border border-bordure bg-surface p-6">
+                    <p>
+                        <strong>D'avril à octobre :</strong>
+                        tous les jours de 8 h à 20 h.
+                    </p>
+
+                    <p>
+                        <strong>De novembre à mars :</strong>
+                        tous les jours de 9 h à 17 h.
+                    </p>
+
+                    <p>
+                        Ces horaires sont réservés aux adhérents. Le samedi de 10 h à 12 h, le
+                        jardin est ouvert à tous.
+                    </p>
+                </div>
+            </section>
         </main>
 
         <!-- US-07 : pied de page (le même sur les 6 pages) -->
