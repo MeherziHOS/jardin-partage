@@ -6,7 +6,7 @@ Projet de formation réalisé en solo avec Scrum, en HTML et Tailwind CSS avec V
 
 ## Liens
 
-- Site en ligne : https://MeherziHOS.github.io/jardin-partage/ (publication à vérifier)
+- Site en ligne : https://MeherziHOS.github.io/jardin-partage/
 - Tableau GitHub Projects : https://github.com/users/MeherziHOS/projects/2
 - Version livrée : `v0.1.0` (à confirmer à la livraison)
 
