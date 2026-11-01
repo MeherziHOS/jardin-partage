@@ -7,17 +7,99 @@
  * Vérifiez chaque contraste avec https://webaim.org/resources/contrastchecker/
  */
 @theme {
-    --color-primaire: #334155;
-    --color-primaire-fonce: #1e293b;
-    --color-secondaire: #e2e8f0;
-    --color-fond: #f8fafc;
+    /* Couleurs principales */
+    --color-primaire: #166534;
+    --color-primaire-fonce: #14532d;
+    --color-secondaire: #dcfce7;
+
+    /* Fonds */
+    --color-fond: #f7faf5;
     --color-surface: #ffffff;
-    --color-texte: #0f172a;
+
+    /* Textes */
+    --color-texte: #172b20;
     --color-texte-secondaire: #475569;
+
+    /* Bordures et états */
     --color-bordure: #64748b;
     --color-succes: #15803d;
     --color-erreur: #b91c1c;
 
+    /* Typographies */
     --font-titre: system-ui, 'Segoe UI', Roboto, sans-serif;
     --font-texte: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* US-08 : styles communs des titres */
+@layer components {
+    main h1 {
+        @apply font-titre text-3xl font-bold text-primaire;
+    }
+
+    main h2 {
+        @apply font-titre text-2xl font-semibold text-primaire;
+    }
+
+    main h3 {
+        @apply font-titre text-xl font-semibold text-primaire-fonce;
+    }
+}
+
+/* US-08 : espacement du contenu principal */
+main {
+    @apply mx-auto max-w-6xl px-4 py-8;
+}
+
+main h1 {
+    @apply mb-6;
+}
+
+main h2 {
+    @apply mb-4;
+}
+
+main p {
+    @apply mb-4 leading-relaxed;
+}
+
+/* US-08 : liens du contenu et du pied de page */
+main a,
+
+/* US-08 : alignement du pied de page */
+footer {
+    @apply mx-auto max-w-6xl px-4 py-6;
+}
+
+footer p {
+    @apply mb-2 text-sm text-texte-secondaire;
+}
+
+footer a {
+    @apply text-primaire underline underline-offset-4;
+}
+
+main a:hover,
+footer a:hover {
+    @apply text-primaire-fonce;
+}
+
+main a:focus-visible,
+footer a:focus-visible {
+    @apply rounded-sm outline-2 outline-offset-2 outline-primaire;
+}
+
+/* US-08 : boutons du contenu principal */
+main button,
+main input[type='submit'] {
+    @apply min-h-11 cursor-pointer rounded-lg bg-primaire px-5 py-3 font-semibold text-white;
+}
+
+main button:hover,
+main input[type='submit']:hover {
+    @apply bg-primaire-fonce;
+}
+
+main button:focus-visible,
+main input[type='submit']:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primaire;
 }
